@@ -23,5 +23,6 @@ from questions import views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("favicon.ico", config_views.favicon),
-    path("excel-to-pandas/", views.excel_to_pandas),
+    path("", config_views.index),
+    path("excel-to-pandas/", views.excel_to_pandas, name="excel-to-pandas"),
 ]
