@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}form input number{% endblock %}
+
+{% block content %}
+    <h1>form input number</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <div>
+            <label for="num1">숫자1</label><br>
+            <input id="num1" type="number" name="num1">
+        </div>
+        <div>
+            <label for="num2">숫자2</label><br>
+            <input id="num2" type="number" name="num2">
+        </div>
+        <hr>
+        <button type="submit">제출</button>
+    </form>
+{% endblock %}
